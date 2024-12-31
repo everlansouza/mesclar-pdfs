@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1073" height="1073" viewBox="0 0 1073 1073">
+  <defs>
+    <filter id="Elipse_14" x="0" y="0" width="1073" height="1073" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="27" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_528" data-name="Grupo 528" transform="translate(-337.536 -1483.536)">
+    <g transform="matrix(1, 0, 0, 1, 337.54, 1483.54)" filter="url(#Elipse_14)">
+      <circle id="Elipse_14-2" data-name="Elipse 14" cx="455.5" cy="455.5" r="455.5" transform="translate(81 81)" fill="#fff"/>
+    </g>
+    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(440.848 1586.008)">
+      <g id="Grupo_73" data-name="Grupo 73" transform="translate(0 0)">
+        <path id="Caminho_415" data-name="Caminho 415" d="M413.5,154.282a31.815,31.815,0,0,0-37.707-14.14,234.49,234.49,0,0,1-147.292,0,31.815,31.815,0,0,0-37.707,14.14l-70.7,122.547a31.815,31.815,0,0,0,15.318,44.777,435.986,435.986,0,0,0,333.47,0A31.815,31.815,0,0,0,484.2,276.829Z" transform="translate(130.41 513.196)" fill="#37b2d4" fill-rule="evenodd"/>
+        <path id="Caminho_416" data-name="Caminho 416" d="M400.356,271.805a432.451,432.451,0,0,0-93.089-137.866,438.352,438.352,0,0,0-42.42-37.707,31.815,31.815,0,0,0-45.955,9.427l-70.7,122.547a31.815,31.815,0,0,0,5.892,38.885l10.605,9.427a232.133,232.133,0,0,1,0,328.757L154.083,614.7a31.815,31.815,0,0,0-5.892,38.885l70.7,122.547a31.816,31.816,0,0,0,21.21,15.318h5.892a31.815,31.815,0,0,0,18.853-7.07,438.4,438.4,0,0,0,42.42-37.707,434.807,434.807,0,0,0,93.089-476.049Z" transform="translate(432.246 -7.319)" fill="#20587d" fill-rule="evenodd"/>
+        <path id="Caminho_417" data-name="Caminho 417" d="M712.106,134.361a31.815,31.815,0,0,0-17.675-18.853C503.2,37.365,283.4,104.558,168.544,276.263S75.509,676.781,220.738,823.689a443.108,443.108,0,0,0,42.42,37.707,31.814,31.814,0,0,0,18.853,7.07H287.9a31.816,31.816,0,0,0,21.21-15.319l70.7-122.547a31.815,31.815,0,0,0-5.892-38.885l-10.6-9.427A232.133,232.133,0,0,1,601.342,298.15a31.815,31.815,0,0,0,37.707-14.14l70.7-122.547a31.816,31.816,0,0,0,2.357-27.1Z" transform="translate(-95.141 -83.154)" fill="#072c58" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
