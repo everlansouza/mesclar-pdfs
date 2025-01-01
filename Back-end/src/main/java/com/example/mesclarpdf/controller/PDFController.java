@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.mesclarpdf.dto.PDFDTO;
+import com.example.mesclarpdf.model.PDFEntity;
 import com.example.mesclarpdf.service.PDFService;
 
 import io.swagger.annotations.ApiOperation;
@@ -43,10 +44,16 @@ public class PDFController {
     }
     
  // Método para baixar o arquivo mesclado
-    @GetMapping("/download/{fileName}")
-    @ApiOperation(value = "Baixar PDF Mesclado", notes = "Permite baixar um arquivo PDF mesclado pelo nome do arquivo.")
-    public ResponseEntity<FileSystemResource> downloadMergedPDF(@PathVariable String fileName) {
-        File file = new File("uploads/" + fileName + ".pdf");
+    @GetMapping("/download/{id}")
+    @ApiOperation(value = "Baixar PDF Mesclado", notes = "Permite baixar um arquivo PDF mesclado pelo ID do arquivo.")
+    public ResponseEntity<FileSystemResource> downloadMergedPDF(@PathVariable Long id) {
+        PDFEntity pdfEntity = pdfService.getPDFById(id);
+        
+        if (pdfEntity == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+
+        File file = new File(pdfEntity.getLink());
         if (!file.exists()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }

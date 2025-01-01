@@ -1,5 +1,9 @@
 import React from 'react';
 
+const downloadArquivo = async (id) => {
+  window.open(`http://localhost:8080/api/pdf/download/${id}`, '_blank');
+};
+
 const FileList = ({ files }) => {
   return (
     <table className="min-w-full border-collapse border border-gray-400 mt-4">
@@ -16,7 +20,12 @@ const FileList = ({ files }) => {
             <td className="p-2">{new Date(file.createdAt).toLocaleString('pt-BR')}</td>
             <td className="p-2 truncate">{file.name}</td>
             <td className="p-2">
-              <a href={file.link} className="bg-blue-600 text-white rounded px-2 py-1">Download</a>
+              <button
+                onClick={() => downloadArquivo(file.id)}
+                className="bg-blue-600 text-white rounded px-2 py-1"
+              >
+                Download
+              </button>
             </td>
           </tr>
         ))}

@@ -10,7 +10,6 @@ const HistoryPage = () => {
     const fetchMergedFiles = async () => {
       try {
         const data = await get('pdf/history'); // Chama a função para obter os arquivos mesclados
-        console.log(data, "TEste");
         setFiles(data);
       } catch (err) {
         console.log('Erro ao carregar os arquivos mesclados.');

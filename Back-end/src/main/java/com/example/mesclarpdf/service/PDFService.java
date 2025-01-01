@@ -70,4 +70,8 @@ public class PDFService {
             return pdfDTO;
         }).collect(Collectors.toList());
     }
+    
+    public PDFEntity getPDFById(Long id) {
+        return pdfRepository.findById(id).orElse(null);
+    }
 }

@@ -28,3 +28,14 @@ export const get = async (rota) => {
     throw error;
   }
 };
+
+// Função para fazer uma requisição GET
+export const getArquivo = async (rota) => {
+  try {
+    const response = await axios.get(`${API_URL}/${rota}`);
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao fazer a requisição GET:', error.response ? error.response.data : error.message);
+    throw error;
+  }
+};
